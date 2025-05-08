@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="greenygz">#2FAA7A</color>
+    <color name="yellowygz">#FCCC3A</color>
+    <color name="lightbrownygz">#656b68</color>
+    <color name="darkbrownygz">#2f3130</color>
+    <color name="redygz">#FF3E3E</color>
+    <color name="whiteygz">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="green_softygz">#E8F8F3</color>
+    <color name="soft_whiteygz">#F8FFFA</color>
+    <color name="soft_blackygz">#A3A1A1</color>
+    <color name="transparent">#00000000</color>
+
+</resources>
