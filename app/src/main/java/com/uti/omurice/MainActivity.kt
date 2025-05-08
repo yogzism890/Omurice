@@ -12,10 +12,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-
+//        memanggil fungsi binding
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+//        membuat event untuk masuk login activity
         binding.btnNext.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java )
             startActivity(intent)

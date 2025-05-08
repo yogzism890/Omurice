@@ -37,6 +37,7 @@ class LoginFragment : Fragment() {
     ): View? {
         val binding = FragmentLoginBinding.inflate(inflater, container, false)
 
+//        membuat event klik ke fragment create account
         binding.textBuatAkun.setOnClickListener {
             (requireActivity() as LoginActivity).supportFragmentManager.beginTransaction().replace(R.id.frame_layout_login,
                 CreateAccountFragment()).commit()
