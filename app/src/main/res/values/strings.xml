@@ -23,4 +23,6 @@
     <string name="sign_up_with_facebook">Sign Up With Facebook</string>
     <string name="sign_up_with_google">Sign Up With Google</string>
     <string name="atau">Atau</string>
+    <string name="title_activity_main_tampilan_utama">MainActivityTampilanUtama</string>
+    <string name="title_activity_tampilan_utama">TampilanUtama</string>
 </resources>
