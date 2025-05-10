@@ -95,7 +95,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button"
+            android:id="@+id/btn_signin_utama"
             android:layout_width="0dp"
             android:layout_height="48dp"
             android:layout_marginStart="24dp"
@@ -124,7 +124,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_signin_utama" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button2"

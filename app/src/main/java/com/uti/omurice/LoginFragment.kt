@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.content.Intent
 import com.uti.omurice.databinding.FragmentLoginBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -41,6 +42,10 @@ class LoginFragment : Fragment() {
         binding.textBuatAkun.setOnClickListener {
             (requireActivity() as LoginActivity).supportFragmentManager.beginTransaction().replace(R.id.frame_layout_login,
                 CreateAccountFragment()).commit()
+        }
+        binding.btnSigninUtama.setOnClickListener {
+            val intent = Intent(requireContext(), TampilanUtama::class.java)
+            startActivity(intent)
         }
 
         return (binding.root)
