@@ -26,7 +26,7 @@
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
-        android:background="@color/green_softygz"
+        android:background="@drawable/bg_navbar"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +37,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:paddingTop="8dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
             android:layout_marginBottom="8dp"
             app:srcCompat="@drawable/home" />
 
@@ -46,7 +47,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:paddingTop="8dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
             android:layout_marginBottom="8dp"
             app:srcCompat="@drawable/favorit" />
 
@@ -55,8 +57,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:paddingTop="8dp"
+            android:paddingTop="10dp"
             android:layout_marginBottom="8dp"
+            android:layout_gravity="center"
             app:srcCompat="@drawable/shop" />
 
         <ImageView
@@ -64,8 +67,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:paddingTop="8dp"
+            android:paddingTop="10dp"
             android:layout_marginBottom="8dp"
+            android:layout_gravity="center"
             app:srcCompat="@drawable/bill" />
 
         <ImageView
@@ -73,8 +77,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-
-            android:paddingTop="8dp"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
             android:layout_marginBottom="8dp"
             app:srcCompat="@drawable/profil" />
     </LinearLayout>
