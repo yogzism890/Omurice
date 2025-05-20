@@ -26,4 +26,6 @@
     <string name="title_activity_main_tampilan_utama">MainActivityTampilanUtama</string>
     <string name="title_activity_tampilan_utama">TampilanUtama</string>
     <string name="your_pocket_friendly_shop">Your Pocket - Friendly Shop</string>
+    <string name="My_Cart">My Cart</string>
+
 </resources>
