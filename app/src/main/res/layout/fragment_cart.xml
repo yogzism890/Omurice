@@ -25,7 +25,10 @@
         android:id="@+id/btnCheckout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Checkout"/>
+        android:text="@string/Checkout"
+        android:textColor="@color/whiteygz"
+        android:backgroundTint="@color/greenygz"/>
+
 
 
 
