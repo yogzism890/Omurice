@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".CartFragment">
 
     <TextView
@@ -19,7 +22,8 @@
         android:id="@+id/rvCartItems"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:paddingBottom="8dp"/>
 
     <Button
         android:id="@+id/btnCheckout"
@@ -29,13 +33,4 @@
         android:textColor="@color/whiteygz"
         android:backgroundTint="@color/greenygz"/>
 
-
-
-
-
-
-
-
-
-
-</FrameLayout>
+</LinearLayout>
