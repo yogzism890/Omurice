@@ -34,5 +34,8 @@
     <string name="bwgmrh" />
     <string name="remove" />
     <string name="add" />
+    <string name="harga" />
+    <string name="bobot" />
+    <string name="produk" />
 
 </resources>
