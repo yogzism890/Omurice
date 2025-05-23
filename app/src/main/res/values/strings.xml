@@ -32,5 +32,7 @@
     <string name="back" />
     <string name="keterangan" />
     <string name="bwgmrh" />
+    <string name="remove" />
+    <string name="add" />
 
 </resources>
