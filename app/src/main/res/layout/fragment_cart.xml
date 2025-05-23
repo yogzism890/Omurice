@@ -131,7 +131,7 @@
     </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- Produk 2: Daging Sapi -->
+    <!-- Produk 2: wortel -->
     <androidx.cardview.widget.CardView
         android:id="@+id/card2"
         android:layout_width="0dp"
@@ -154,7 +154,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginEnd="10dp"
-        android:contentDescription="@string/keterangan"
+        android:contentDescription="@string/produk"
         android:scaleType="centerCrop"
         android:src="@drawable/wrtl" />
 
@@ -191,6 +191,42 @@
             android:textStyle="bold"
             tools:text="Rp.20.000,00" />
     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_remove"
+                android:contentDescription="@string/remove"
+                android:padding="4dp"
+                app:tint="@color/greenygz" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="@string/keterangan"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:text="2" />
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_add"
+                android:contentDescription="@string/add"
+                android:padding="4dp"
+                app:tint="@color/greenygz" />
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
 
 
 
