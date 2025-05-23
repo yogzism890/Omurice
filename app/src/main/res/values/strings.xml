@@ -29,5 +29,6 @@
     <string name="My_Cart">My Cart</string>
     <string name="Checkout">Checkout</string>
     <string name="Back">Back</string>
+    <string name="back" />
 
 </resources>
