@@ -38,5 +38,6 @@
     <string name="bobot" />
     <string name="produk" />
     <string name="tomat" />
+    <string name="kuantitas" />
 
 </resources>
