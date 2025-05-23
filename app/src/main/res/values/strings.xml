@@ -37,5 +37,6 @@
     <string name="harga" />
     <string name="bobot" />
     <string name="produk" />
+    <string name="tomat" />
 
 </resources>
