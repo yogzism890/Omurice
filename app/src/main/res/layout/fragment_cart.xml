@@ -320,7 +320,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/card3"
         app:layout_constraintVertical_bias="0.0"
-        tools:text="Checkout" /
+        tools:text="Checkout" />
+    <!-- Judul rekomendasi -->
+    <TextView
+        android:id="@+id/tv_recommended"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/keterangan"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkoutButton"
+        tools:text="You Might Also Need" />
 
 
 
