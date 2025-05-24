@@ -7,6 +7,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.uti.omurice.databinding.ActivityLoginBinding
 import com.uti.omurice.databinding.TampilanUtamaBinding
+import com.uti.omurice.CartFragment
+
 
 class TampilanUtama : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +17,13 @@ class TampilanUtama : AppCompatActivity() {
 //        memanggil fungsi binding
         val binding = TampilanUtamaBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.imageView4.setOnClickListener {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, CartFragment())
+                .commit()
+        }
+
 
 
 
