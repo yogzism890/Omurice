@@ -283,40 +283,41 @@
             android:textStyle="bold"
             tools:text="Rp.5.000,00" />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
-    <ImageButton
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:src="@drawable/ic_remove"
-        android:contentDescription="@string/remove"
-        android:padding="4dp"
-        app:tint="@color/greenygz" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="8dp"
-        android:text="@string/keterangan"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        tools:text="3" />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_remove"
+                android:contentDescription="@string/keterangan"
+                android:padding="4dp"
+                app:tint="@color/greenygz" />
 
-    <ImageButton
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:src="@drawable/ic_remove"
-        android:contentDescription="@string/keterangan"
-        android:padding="4dp"
-        app:tint="@color/greenygz" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="@string/keterangan"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:text="3" />
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_add"
+                android:contentDescription="@string/keterangan"
+                android:padding="4dp"
+                app:tint="@color/greenygz" />
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
     <!-- Tombol Checkout -->
     <Button
         android:id="@+id/checkoutButton"
