@@ -24,16 +24,65 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
+        <!-- Search Bar -->
+        <LinearLayout
+            android:id="@+id/searchBar"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_search_rounded"
+            app:layout_constraintTop_toBottomOf="@id/textView16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Ikon search -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_search"
+                app:tint="@color/black" />
+
+            <!-- Input teks -->
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Search"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textColorHint="#888888"
+                android:paddingStart="8dp" />
+
+            <!-- Tombol filter -->
+            <ImageButton
+                android:id="@+id/btnFilter"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_filter"
+                android:background="@drawable/bg_button_circle"
+                android:scaleType="center"
+                android:padding="6dp"
+                android:contentDescription="Filter"
+                app:tint="@android:color/white" />
+        </LinearLayout>
+
         <!-- CARD 1 -->
         <androidx.cardview.widget.CardView
             android:id="@+id/card1"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="30dp"
             app:cardCornerRadius="16dp"
             app:cardElevation="4dp"
-            app:layout_constraintTop_toBottomOf="@id/textView16"
+            app:layout_constraintTop_toBottomOf="@id/searchBar"
             app:layout_constraintStart_toStartOf="parent">
             <include layout="@layout/item_card" />
         </androidx.cardview.widget.CardView>
@@ -44,10 +93,10 @@
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="30dp"
             app:cardCornerRadius="16dp"
             app:cardElevation="4dp"
-            app:layout_constraintTop_toBottomOf="@id/textView16"
+            app:layout_constraintTop_toBottomOf="@id/searchBar"
             app:layout_constraintEnd_toEndOf="parent">
             <include layout="@layout/item_card" />
         </androidx.cardview.widget.CardView>
