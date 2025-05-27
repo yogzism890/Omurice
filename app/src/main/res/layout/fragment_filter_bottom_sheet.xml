@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filterSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_top"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Header -->
+
+    <View
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_drag_handle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <!-- Categories, Gender, Price, Store By, Rating (gunakan ChipGroup, SeekBar, dll sesuai UI) -->
+    <!-- ... silakan saya bantu isi bila kamu ingin full desain sesuai gambar -->
+
+    <!-- CATEGORIES -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:singleSelection="false"
+        android:chipSpacing="8dp">
+
+        <com.google.android.material.chip.Chip
+            android:text="All"
+            style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+        <com.google.android.material.chip.Chip
+            android:text="Vegetable"
+            style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+        <com.google.android.material.chip.Chip
+            android:text="Fruit Item"
+            style="@style/Widget.MaterialComponents.Chip.Choice" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- GENDER -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:singleSelection="true"
+        android:chipSpacing="8dp">
+
+        <com.google.android.material.chip.Chip
+            android:text="All"
+            style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+        <com.google.android.material.chip.Chip
+            android:text="Man"
+            style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+        <com.google.android.material.chip.Chip
+            android:text="Woman"
+            style="@style/Widget.MaterialComponents.Chip.Choice" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- PRICE SLIDER -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <!-- STORE BY -->
+    <com.google.android.material.slider.RangeSlider
+        android:id="@+id/priceSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:stepSize="1"
+        android:valueFrom="0"
+        android:valueTo="50"
+        android:values="5,25" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store By"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:singleSelection="true"
+        android:chipSpacing="8dp">
+
+        <com.google.android.material.chip.Chip
+            android:text="Popular"
+            style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+        <com.google.android.material.chip.Chip
+            android:text="Most Recent"
+            style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+        <com.google.android.material.chip.Chip
+            android:text="Price High"
+            style="@style/Widget.MaterialComponents.Chip.Choice" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <!-- RATING -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:chipSpacing="8dp">
+
+        <com.google.android.material.chip.Chip
+            android:text="All"
+            style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+        <com.google.android.material.chip.Chip
+            android:text="⭐ 5"
+            style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+        <com.google.android.material.chip.Chip
+            android:text="⭐ 4"
+            style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+        <com.google.android.material.chip.Chip
+            android:text="⭐ 3"
+            style="@style/Widget.MaterialComponents.Chip.Choice" />
+    </com.google.android.material.chip.ChipGroup>
+
+</LinearLayout>
