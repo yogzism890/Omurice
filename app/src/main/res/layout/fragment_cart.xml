@@ -538,6 +538,15 @@
                 android:contentDescription="@string/produk"
                 android:scaleType="centerCrop"
                 android:src="@drawable/cbe" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/produk"
+                tools:text="Cabai Merah"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp" />
         </LinearLayout>
         </androidx.cardview.widget.CardView>
 
