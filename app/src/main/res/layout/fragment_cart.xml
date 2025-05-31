@@ -499,6 +499,13 @@
                 android:textSize="14sp"
                 android:textStyle="bold"
                 tools:text="Kubis" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kuantitas"
+                android:textColor="#888888"
+                android:textSize="12sp"
+                tools:text="1Kg" />
 
         </LinearLayout>
         </androidx.cardview.widget.CardView>
