@@ -422,6 +422,33 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+        <!-- Item: Chicken -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:contentDescription="@string/produk"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kentang" />
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
 
 
 
