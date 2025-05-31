@@ -443,6 +443,30 @@
                 android:contentDescription="@string/produk"
                 android:scaleType="centerCrop"
                 android:src="@drawable/kentang" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="Kentang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#888888"
+                android:textSize="12sp"
+                tools:text="1kg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="Rp.13.000,00" />
 
         </LinearLayout>
         </androidx.cardview.widget.CardView>
