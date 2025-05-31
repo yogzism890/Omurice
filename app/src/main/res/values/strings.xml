@@ -30,15 +30,18 @@
     <string name="Checkout">Checkout</string>
     <string name="Back">Back</string>
     <string name="back" />
-    <string name="keterangan" >You Might Also Need</string>
+    <string name="keterangan">You Might Also Need</string>
     <string name="bwgmrh" />
     <string name="remove" />
     <string name="add" />
-    <string name="harga" >Rp.28.000,00</string>
-    <string name="bobot" >1Kg</string>
-    <string name="produk" >Tomat</string>
+    <string name="harga">Rp.28.000,00</string>
+    <string name="bobot">1Kg</string>
+    <string name="produk">Tomat</string>
     <string name="tomat" />
-    <string name="kuantitas" >3</string>
+    <string name="kuantitas">3</string>
     <string name="bawang_merah">Bawang Merah</string>
+    <string name="favorite_list">Favorite List</string>
+    <string name="beras_pulen">Beras Pulen</string>
+    <string name="rp_20_000">Rp.20.000</string>
 
 </resources>
