@@ -589,6 +589,17 @@
         android:layout_gravity="center"
         android:layout_marginBottom="8dp"
         app:srcCompat="@drawable/home" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/favorite_list"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            app:srcCompat="@drawable/favorit" />
+
     </LinearLayout>
 
 
