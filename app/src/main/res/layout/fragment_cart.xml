@@ -515,7 +515,29 @@
                 android:textSize="14sp"
                 android:textStyle="bold"
                 tools:text="Rp.8.000,00" />
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
+        <!-- Item: cabe -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:contentDescription="@string/produk"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cbe" />
         </LinearLayout>
         </androidx.cardview.widget.CardView>
 
