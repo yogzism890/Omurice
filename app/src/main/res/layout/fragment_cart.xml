@@ -10,7 +10,6 @@
     tools:context=".CartFragment">
 
     <!-- Tombol Back -->
-
     <ImageView
         android:id="@+id/btn_back"
         android:layout_width="40dp"
