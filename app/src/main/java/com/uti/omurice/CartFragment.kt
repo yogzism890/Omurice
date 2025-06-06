@@ -1,6 +1,7 @@
 package com.uti.omurice
 
 import android.os.Bundle
+import androidx.activity.addCallback
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -27,6 +28,14 @@ class CartFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
+        // Handle tombol back di fragment ini
+        requireActivity().onBackPressedDispatcher.addCallback(this) {
+            // Navigasi balik ke FavoriteFragment
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.btn_back, FavoritFragment())
+                .commit()
+        }
     }
 
     override fun onCreateView(
@@ -36,6 +45,7 @@ class CartFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_cart, container, false)
     }
+
 
     companion object {
         /**
