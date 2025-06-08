@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/filterSheet"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -8,7 +9,6 @@
     android:padding="20dp">
 
     <!-- Header -->
-
     <View
         android:layout_width="36dp"
         android:layout_height="4dp"
@@ -19,15 +19,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Filter"
+        android:text="@string/filter"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_gravity="center"/>
 
-    <!-- Categories, Gender, Price, Store By, Rating (gunakan ChipGroup, SeekBar, dll sesuai UI) -->
-    <!-- ... silakan saya bantu isi bila kamu ingin full desain sesuai gambar -->
-
-    <!-- CATEGORIES -->
+    <!-- Categories -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,23 +37,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:singleSelection="false"
-        android:chipSpacing="8dp">
+        app:singleSelection="false"
+        app:chipSpacing="8dp">
 
         <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="All"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
 
         <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Vegetable"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
 
         <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Fruit Item"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
     </com.google.android.material.chip.ChipGroup>
 
-    <!-- GENDER -->
+    <!-- Gender -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -69,23 +72,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:singleSelection="true"
-        android:chipSpacing="8dp">
+        app:singleSelection="true"
+        app:chipSpacing="8dp">
 
         <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="All"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
 
         <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Man"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
 
         <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Woman"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
     </com.google.android.material.chip.ChipGroup>
 
-    <!-- PRICE SLIDER -->
+    <!-- Price -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -93,17 +102,7 @@
         android:textStyle="bold"
         android:layout_marginTop="16dp" />
 
-    <!-- STORE BY -->
-    <com.google.android.material.slider.RangeSlider
-        android:id="@+id/priceSlider"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:stepSize="1"
-        android:valueFrom="0"
-        android:valueTo="50"
-        android:values="5,25" />
-
+    <!-- Store By -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -116,23 +115,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:singleSelection="true"
-        android:chipSpacing="8dp">
+        app:singleSelection="true"
+        app:chipSpacing="8dp">
 
         <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Popular"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
 
         <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Most Recent"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
 
         <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Price High"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
     </com.google.android.material.chip.ChipGroup>
 
-    <!-- RATING -->
+    <!-- Rating -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -145,21 +150,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:chipSpacing="8dp">
+        app:chipSpacing="8dp">
 
         <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="All"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
 
         <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="⭐ 5"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
 
         <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="⭐ 4"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
 
         <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="⭐ 3"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
     </com.google.android.material.chip.ChipGroup>

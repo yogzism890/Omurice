@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="price_range_default">
+        <item>5.0</item>
+        <item>25.0</item>
+    </array>
+</resources>

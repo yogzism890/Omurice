@@ -46,5 +46,11 @@
     <string name="shop" />
     <string name="bill" />
     <string name="profile" />
+    <string name="hint_search">Search</string>
+    <string name="desc_back">Back</string>
+    <string name="desc_filter">Filter</string>
+    <string name="desc_search_icon">Search Icon</string>
+    <string name="filter">Filter</string>
+
 
 </resources>
