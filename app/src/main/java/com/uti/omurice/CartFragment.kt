@@ -52,6 +52,7 @@ class CartFragment : Fragment() {
         return view
     }
 
+
     companion object {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
