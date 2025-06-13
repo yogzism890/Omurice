@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/whiteygz"
+    tools:context=".TampilanUtama">
 
     <FrameLayout
         android:id="@+id/fragment_container"
@@ -13,10 +15,8 @@
         android:layout_marginEnd="1dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -29,18 +29,30 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="28dp"
                 android:text="@string/your_pocket_friendly_shop"
+                android:textColor="@color/black"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button"
-                tools:layout_editor_absoluteX="119dp"
-                tools:layout_editor_absoluteY="120dp" />
+            <EditText
+                android:id="@+id/editTextSearch"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/hint_search"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/soft_blackygz"
+                android:textSize="16sp"
+                android:importantForAutofill="yes"
+                android:autofillHints="username"
+                android:background="@drawable/search_background"
+                app:layout_constraintTop_toBottomOf="@id/textView15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </FrameLayout>
 
     <LinearLayout
@@ -64,6 +76,7 @@
             android:paddingTop="10dp"
             android:layout_gravity="center"
             android:layout_marginBottom="8dp"
+            android:contentDescription="@string/desc_home"
             app:srcCompat="@drawable/home" />
 
         <ImageView
@@ -74,6 +87,7 @@
             android:paddingTop="10dp"
             android:layout_gravity="center"
             android:layout_marginBottom="8dp"
+            android:contentDescription="@string/desc_favorit"
             app:srcCompat="@drawable/favorit" />
 
         <ImageView
@@ -84,6 +98,7 @@
             android:paddingTop="10dp"
             android:layout_marginBottom="8dp"
             android:layout_gravity="center"
+            android:contentDescription="@string/desc_shop"
             app:srcCompat="@drawable/shop" />
 
         <ImageView
@@ -94,6 +109,7 @@
             android:paddingTop="10dp"
             android:layout_marginBottom="8dp"
             android:layout_gravity="center"
+            android:contentDescription="@string/desc_bill"
             app:srcCompat="@drawable/bill" />
 
         <ImageView
@@ -104,6 +120,8 @@
             android:paddingTop="10dp"
             android:layout_gravity="center"
             android:layout_marginBottom="8dp"
+            android:contentDescription="@string/desc_profil"
             app:srcCompat="@drawable/profil" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
