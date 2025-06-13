@@ -17,6 +17,16 @@ class TampilanUtama : AppCompatActivity() {
 //        memanggil fungsi binding
         val binding = TampilanUtamaBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        // List gambar banner (pastikan drawable ada)
+        val imageList = listOf(
+            R.drawable.asset_page,
+            R.drawable.asset_page, // ganti dengan asset kamu
+            R.drawable.asset_page // dan ini juga
+        )
+
+        val bannerAdapter = BannerAdapter(imageList)
+        binding.bannerViewPager.adapter = bannerAdapter
+
 
 //        membuka cart_fragment
         binding.imageView4.setOnClickListener {
