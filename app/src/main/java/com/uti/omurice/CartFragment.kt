@@ -44,7 +44,7 @@ class CartFragment : Fragment() {
         // Ketika tombol checkout diklik, ganti fragment
         checkoutButton.setOnClickListener {
             parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, CheckoutFragment())
+//                .replace(R.id.fragment_container, CheckoutFragment())
                 .addToBackStack(null) // agar bisa back ke cart
                 .commit()
         }
