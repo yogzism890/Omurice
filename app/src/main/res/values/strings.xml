@@ -66,7 +66,11 @@
     <string name="cabe">Cabai Merah</string>
     <string name="hargacb">Rp.23.000.00</string>
     <string name="notifikasi">Notifikasi</string>
-
+    <string name="best_product">Best Product</string>
+    <string name="desc_home">desc_home</string>
+    <string name="desc_shop">desc_shop</string>
+    <string name="desc_profil">desc_profil</string>
+    <string name="desc_bill">desc_bill</string>
 
 
 </resources>
