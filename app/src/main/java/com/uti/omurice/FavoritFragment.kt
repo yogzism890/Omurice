@@ -23,10 +23,12 @@ class FavoritFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Tombol filter ditekan -> tampilkan bottom sheet
+        // Tombol filter ditekan -> ganti fragment ke FilterFragment
         binding.btnFilter.setOnClickListener {
-            val bottomSheet = FilterBottomSheetFragment()
-            bottomSheet.show(parentFragmentManager, bottomSheet.tag)
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, FilterBottomSheetFragment())
+                .addToBackStack(null)
+                .commit()
         }
     }
 

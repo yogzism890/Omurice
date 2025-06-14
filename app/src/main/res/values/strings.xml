@@ -71,6 +71,9 @@
     <string name="desc_shop">desc_shop</string>
     <string name="desc_profil">desc_profil</string>
     <string name="desc_bill">desc_bill</string>
+    <string name="beras_top">Beras TOP</string>
+    <string name="_5000g_packet">5000g packet</string>
+    <string name="rp_75_000">Rp.75.000</string>
 
 
 </resources>
