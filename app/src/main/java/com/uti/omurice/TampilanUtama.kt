@@ -19,7 +19,7 @@ class TampilanUtama : AppCompatActivity() {
         setContentView(binding.root)
 
 //        membuka cart_fragment
-        binding.imageView4.setOnClickListener {
+        binding.btnCart.setOnClickListener {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, CartFragment())
                 .commit()
