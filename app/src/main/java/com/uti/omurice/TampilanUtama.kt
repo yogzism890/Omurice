@@ -41,6 +41,12 @@ class TampilanUtama : AppCompatActivity() {
                 .addToBackStack(null)
                 .commit()
         }
+        binding.btnCart.setOnClickListener {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, CartFragment())
+                .addToBackStack(null)
+                .commit()
+        }
 
         // (Opsional) tombol lainnya bisa ditambahkan di sini
         // binding.btnCart.setOnClickListener { ... }
