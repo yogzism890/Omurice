@@ -3,7 +3,6 @@ package com.uti.omurice
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -17,54 +16,56 @@ class TampilanUtama : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
 
+        // Menghubungkan tampilan dengan view binding
         binding = TampilanUtamaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // List gambar banner (pastikan drawable tersedia)
-        val imageList = listOf(
-            R.drawable.asset_page,
-            R.drawable.asset_page,
-            R.drawable.asset_page
-        )
-
-        // Set adapter ViewPager
-        val bannerAdapter = BannerAdapter(imageList)
-        binding.bannerViewPager.adapter = bannerAdapter
-
-        // Auto-scroll banner setiap 5 detik
-        bannerRunnable = object : Runnable {
-            override fun run() {
-                val nextItem = (binding.bannerViewPager.currentItem + 1) % imageList.size
-                binding.bannerViewPager.setCurrentItem(nextItem, true)
-                bannerHandler.postDelayed(this, 5000)
-            }
-        }
-        bannerHandler.postDelayed(bannerRunnable, 5000)
-
-        // Tombol membuka CartFragment
-        binding.imageView4.setOnClickListener {
+        // Tampilkan HomeFragment saat pertama kali aplikasi dibuka
+        if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, CartFragment())
+                .replace(R.id.fragment_container, HomeFragment())
                 .commit()
         }
 
-        // Menyesuaikan padding dengan sistem UI (status bar dll.)
+        // Navigasi tombol bawah
+        binding.btnHome.setOnClickListener {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, HomeFragment())
+                .commit()
+        }
+
+        binding.btnFav.setOnClickListener {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, FavoritFragment())
+                .addToBackStack(null)
+                .commit()
+        }
+
+        // (Opsional) tombol lainnya bisa ditambahkan di sini
+        // binding.btnCart.setOnClickListener { ... }
+
+        // Penyesuaian padding agar tidak bentrok dengan status bar atau navigasi
         ViewCompat.setOnApplyWindowInsetsListener(binding.root) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        // Auto-scroll banner (jika kamu mengatur ViewPager untuk banner)
+        bannerRunnable = Runnable {
+            // logika auto-scroll banner (jika ada)
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        bannerHandler.postDelayed(bannerRunnable, 5000) // 5 detik delay
     }
 
     override fun onPause() {
         super.onPause()
         bannerHandler.removeCallbacks(bannerRunnable)
     }
-
-    override fun onResume() {
-        super.onResume()
-        bannerHandler.postDelayed(bannerRunnable, 5000)
-    }
 }
+

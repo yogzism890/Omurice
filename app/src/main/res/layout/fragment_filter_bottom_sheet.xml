@@ -19,10 +19,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/filter"
+        android:text="Filter"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center" />
 
     <!-- Categories -->
     <TextView
@@ -37,7 +37,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        app:singleSelection="false"
         app:chipSpacing="8dp">
 
         <com.google.android.material.chip.Chip
@@ -72,8 +71,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        app:singleSelection="true"
-        app:chipSpacing="8dp">
+        app:chipSpacing="8dp"
+        app:singleSelection="true">
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
@@ -94,13 +93,7 @@
             style="@style/Widget.MaterialComponents.Chip.Choice" />
     </com.google.android.material.chip.ChipGroup>
 
-    <!-- Price -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Price"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp" />
+
 
     <!-- Store By -->
     <TextView
@@ -115,8 +108,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        app:singleSelection="true"
-        app:chipSpacing="8dp">
+        app:chipSpacing="8dp"
+        app:singleSelection="true">
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
@@ -161,20 +154,48 @@
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="⭐ 5"
+            android:text="5"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="⭐ 4"
+            android:text="4"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="⭐ 3"
+            android:text="3"
             style="@style/Widget.MaterialComponents.Chip.Choice" />
     </com.google.android.material.chip.ChipGroup>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="end">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_greenygz"
+            android:textColor="@color/whiteygz"
+            android:layout_weight="1"
+            android:text="Cancel" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnApply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_greenygz"
+            android:textColor="@color/whiteygz"
+            android:layout_weight="1"
+            android:text="Apply Filter"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
 
 </LinearLayout>
