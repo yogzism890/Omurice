@@ -7,7 +7,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.google.android.material.tabs.TabLayoutMediator
 import com.uti.omurice.databinding.TampilanUtamaBinding
 
 class TampilanUtama : AppCompatActivity() {
@@ -23,21 +22,18 @@ class TampilanUtama : AppCompatActivity() {
         binding = TampilanUtamaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // 🖼️ Daftar gambar banner
+        // List gambar banner (pastikan drawable tersedia)
         val imageList = listOf(
             R.drawable.asset_page,
             R.drawable.asset_page,
             R.drawable.asset_page
         )
 
-        // 🔁 Set adapter untuk ViewPager2
+        // Set adapter ViewPager
         val bannerAdapter = BannerAdapter(imageList)
         binding.bannerViewPager.adapter = bannerAdapter
 
-        // 🔘 Hubungkan ViewPager2 dengan TabLayout untuk dots indicator
-        TabLayoutMediator(binding.tabIndicator, binding.bannerViewPager) { _, _ -> }.attach()
-
-        // ⏱️ Auto-scroll banner setiap 5 detik
+        // Auto-scroll banner setiap 5 detik
         bannerRunnable = object : Runnable {
             override fun run() {
                 val nextItem = (binding.bannerViewPager.currentItem + 1) % imageList.size
@@ -47,14 +43,14 @@ class TampilanUtama : AppCompatActivity() {
         }
         bannerHandler.postDelayed(bannerRunnable, 5000)
 
-        // 🛒 Tombol membuka CartFragment
+        // Tombol membuka CartFragment
         binding.imageView4.setOnClickListener {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, CartFragment())
                 .commit()
         }
 
-        // 📱 Menyesuaikan padding dengan sistem UI
+        // Menyesuaikan padding dengan sistem UI (status bar dll.)
         ViewCompat.setOnApplyWindowInsetsListener(binding.root) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
