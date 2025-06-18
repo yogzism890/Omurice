@@ -96,6 +96,17 @@
     <string name="no6">$2.35</string>
     <string name="TotalPayment">Total Payment</string>
     <string name="no7">$47.35</string>
+    <string name="GroceryPay">Grocery Pay</string>
+    <string name="YourBalance">Your Balance</string>
+    <string name="no8">$18.25</string>
+    <string name="DebitCreditCard">Debit/CreditCard</string>
+    <string name="no9">**** 7582</string>
+    <string name="PaymentViaBank">Payment Via Bank</string>
+    <string name="AmarBank">Amar Bank</string>
+    <string name="MegaBank">Mega Bank</string>
+    <string name="LineBank">Line Bank</string>
+
+
 
 
 </resources>
