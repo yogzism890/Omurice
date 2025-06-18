@@ -310,9 +310,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
-
-
             </RadioGroup>
+            <!-- Tombol Payment -->
+            <Button
+                android:id="@+id/btnPay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/greenygz"
+                android:text="@string/Payment"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
