@@ -255,8 +255,8 @@
                     android:paddingVertical="12dp">
 
                     <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="52dp"
+                        android:layout_height="25dp"
                         android:src="@drawable/logo_mega" />
 
                     <TextView
@@ -269,6 +269,32 @@
 
                     <RadioButton
                         android:id="@+id/radioMega"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!-- Line Bank -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="12dp">
+
+                    <ImageView
+                        android:layout_width="52dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/linebank" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="12dp"
+                        android:text="@string/LineBank"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioLine"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
