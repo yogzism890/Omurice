@@ -74,6 +74,30 @@
     <string name="beras_top">Beras TOP</string>
     <string name="_5000g_packet">5000g packet</string>
     <string name="rp_75_000">Rp.75.000</string>
+    <string name="Shipping">Shipping</string>
+    <string name="AddLocation">Add Location</string>
+    <string name="Home">Home</string>
+    <string name="No1">+6889423561\n2564 Calhoun, Florida</string>
+    <string name="Office">+Office</string>
+    <string name="No2">++6889423561\n5847 Ala St, FI</string>
+    <string name="No3">****4586</string>
+    <string name="EditHome">Edit Home</string>
+    <string name="VisaCard">Visa Card</string>
+    <string name="EditOffice">Edit Office</string>
+    <string name="Visa">Visa</string>
+    <string name="No4">****7582</string>
+    <string name="MasterCard">Master Card</string>
+    <string name="AddCard">Add Card</string>
+    <string name="Payment">Payment</string>
+    <string name="PaymentSummary">Payment Summary</string>
+    <string name="tigaItem">3 Item</string>
+    <string name="no5">$45.00</string>
+    <string name="DeliveryFee">Delivery Fee</string>
+    <string name="no6">$2.35</string>
+    <string name="TotalPayment">Total Payment</string>
+    <string name="no7">$47.35</string>
+
+
 
 
 </resources>
