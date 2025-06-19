@@ -11,36 +11,39 @@
         android:layout_height="match_parent">
 
         <!-- Judul -->
+
+        <!-- Tombol Kembali -->
+
+        <!-- Search Bar -->
         <TextView
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="24dp"
             android:fontFamily="@font/manropebold"
             android:text="@string/favorite_list"
             android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- Tombol Kembali -->
         <ImageButton
             android:id="@+id/btnBack"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
             android:background="@android:color/transparent"
             android:contentDescription="@string/desc_back"
-            android:src="@drawable/ic_back"
             android:padding="6dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/ic_back"
             app:layout_constraintEnd_toStartOf="@id/textView16"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:tint="@color/black" />
 
-        <!-- Search Bar -->
         <LinearLayout
             android:id="@+id/searchBar"
             android:layout_width="0dp"
