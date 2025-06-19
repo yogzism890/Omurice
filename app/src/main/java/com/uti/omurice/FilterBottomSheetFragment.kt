@@ -21,14 +21,25 @@ class FilterBottomSheetFragment : BottomSheetDialogFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val btnApply = view.findViewById<Button>(R.id.btnApply)
+        val btnCancel = view.findViewById<Button>(R.id.btnCancel) // Tambahkan ini
 
         btnApply.setOnClickListener {
             // Tutup BottomSheet
             dismiss()
 
-            // Navigasi ke FragmentFavoritList
+            // Navigasi ke FavoritListFragment
             parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, FavoritListFragment()) // ID dari container fragment utama
+                .replace(R.id.fragment_container, FavoritListFragment())
+                .addToBackStack(null)
+                .commit()
+        }
+
+        btnCancel.setOnClickListener {
+            // Tutup BottomSheet tanpa navigasi
+            dismiss()
+
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, FavoritFragment())
                 .addToBackStack(null)
                 .commit()
         }

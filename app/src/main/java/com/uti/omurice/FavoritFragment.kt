@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.uti.omurice.databinding.FragmentFavoritBinding
 
@@ -23,10 +24,16 @@ class FavoritFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Tombol filter ditekan -> ganti fragment ke FilterFragment
+        // Tombol filter untuk membuka BottomSheet
         binding.btnFilter.setOnClickListener {
+            val filterSheet = FilterBottomSheetFragment()
+            filterSheet.show(parentFragmentManager, filterSheet.tag)
+        }
+
+        // Tombol back untuk kembali ke HomeFragment
+        binding.btnBack.setOnClickListener {
             parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, FilterBottomSheetFragment())
+                .replace(R.id.fragment_container, HomeFragment())
                 .addToBackStack(null)
                 .commit()
         }
