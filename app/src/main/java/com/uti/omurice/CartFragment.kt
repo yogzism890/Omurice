@@ -16,7 +16,7 @@ class CartFragment : Fragment() {
         // Tangani tombol back (fisik) untuk kembali ke FavoritFragment
         requireActivity().onBackPressedDispatcher.addCallback(this) {
             parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, FavoritFragment())
+                .replace(R.id.fragment_container, FavoritListFragment())
                 .addToBackStack(null)
                 .commit()
         }
