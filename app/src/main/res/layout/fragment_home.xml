@@ -28,6 +28,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <!-- Pencarian -->
+
+        <!-- Carousel Banner -->
         <EditText
             android:id="@+id/editTextSearch"
             android:layout_width="0dp"
@@ -45,11 +47,11 @@
             android:textColor="@color/black"
             android:textColorHint="@color/soft_blackygz"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/textView15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/textView15" />
 
-        <!-- Carousel Banner -->
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/bannerViewPager"
             android:layout_width="0dp"

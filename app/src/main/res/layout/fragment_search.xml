@@ -98,7 +98,7 @@
         </LinearLayout>
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/btn_notifikasi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_notifications"
