@@ -106,6 +106,7 @@
     <string name="MegaBank">Mega Bank</string>
     <string name="LineBank">Line Bank</string>
     <string name="Moneybag">Money Bag</string>
+    <string name="recovery_password">Recovery Password</string>
 
 
 </resources>
