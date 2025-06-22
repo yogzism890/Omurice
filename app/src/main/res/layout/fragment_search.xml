@@ -30,7 +30,7 @@
             tools:text="Search" />
 
         <ImageButton
-            android:id="@+id/btnBack"
+            android:id="@+id/btnBackRcvrPw"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginStart="16dp"

@@ -107,6 +107,8 @@
     <string name="LineBank">Line Bank</string>
     <string name="Moneybag">Money Bag</string>
     <string name="recovery_password">Recovery Password</string>
+    <string name="recov_pw_img">recov pw img</string>
+    <string name="back_rcvrpw">back rcvrpw</string>
 
 
 </resources>

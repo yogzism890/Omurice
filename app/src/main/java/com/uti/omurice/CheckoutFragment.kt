@@ -21,7 +21,7 @@ class CheckoutFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 //        logika tombol back
-        val btnBack = view.findViewById<ImageButton>(R.id.btnBack)
+        val btnBack = view.findViewById<ImageButton>(R.id.btnBackRcvrPw)
         btnBack.setOnClickListener {
             parentFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, CartFragment())

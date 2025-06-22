@@ -13,7 +13,7 @@
 
         <!-- Tombol Back -->
         <ImageButton
-            android:id="@+id/btnBack"
+            android:id="@+id/btnBackRcvrPw"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/oval_whiteygz"
@@ -36,7 +36,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/btnNotif"
             app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toEndOf="@+id/btnBack"
+            app:layout_constraintStart_toEndOf="@+id/btnBackRcvrPw"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton

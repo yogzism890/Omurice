@@ -14,7 +14,7 @@
 
         <!-- Tombol Back -->
         <ImageButton
-            android:id="@+id/btnBack"
+            android:id="@+id/btnBackRcvrPw"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/oval_whiteygz"
@@ -36,7 +36,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/btnAdd"
-            app:layout_constraintStart_toEndOf="@+id/btnBack"
+            app:layout_constraintStart_toEndOf="@+id/btnBackRcvrPw"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
@@ -58,7 +58,7 @@
             android:padding="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnBack">
+            app:layout_constraintTop_toBottomOf="@id/btnBackRcvrPw">
 
             <TextView
                 android:layout_width="wrap_content"
