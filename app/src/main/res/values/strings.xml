@@ -109,6 +109,7 @@
     <string name="recovery_password">Recovery Password</string>
     <string name="recov_pw_img">recov pw img</string>
     <string name="back_rcvrpw">back rcvrpw</string>
+    <string name="tolong_pilih_salah_satu_opsi_di_bawah_untuk_pemulihan_akun_pilih_salah_satu_untuk_melanjutkan">Tolong pilih salah satu opsi di bawah untuk pemulihan akun, Pilih salah satu untuk melanjutkan</string>
 
 
 </resources>
