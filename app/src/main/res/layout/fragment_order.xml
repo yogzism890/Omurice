@@ -88,6 +88,15 @@
                     android:scaleType="fitCenter"
                     android:background="@drawable/bg_button_circle" />
 
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="@string/bawang_putih"
+                    android:src="@drawable/bwngputih"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bg_button_circle" />
+
             </LinearLayout>
         </HorizontalScrollView>
 
