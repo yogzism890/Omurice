@@ -20,7 +20,8 @@ class CheckoutFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-//        logika tombol back
+
+        // Tombol back ke CartFragment
         val btnBack = view.findViewById<ImageButton>(R.id.btnBackRcvrPw)
         btnBack.setOnClickListener {
             parentFragmentManager.beginTransaction()
@@ -28,18 +29,19 @@ class CheckoutFragment : Fragment() {
                 .addToBackStack(null)
                 .commit()
         }
-//        Membuka fragment pay jika btnpay di klik
-        val btnPay = view.findViewById<Button>(R.id.btnPay)
 
+        // Tombol lanjut ke PaymentFragment
+        val btnPay = view.findViewById<Button>(R.id.btnPay)
         btnPay.setOnClickListener {
             val fragmentPayment = PaymentFragment()
 
+            // Bersihkan semua backstack agar PaymentFragment berdiri sendiri
             parentFragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE)
 
+            // Ganti ke PaymentFragment tanpa menambahkan ke backstack
             parentFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, fragmentPayment)
                 .commit()
-
         }
     }
 }
