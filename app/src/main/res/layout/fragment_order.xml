@@ -98,13 +98,14 @@
                     android:background="@drawable/bg_button_circle" />
             </LinearLayout>
         </HorizontalScrollView>
+
         <!-- Tab Order Status -->
         <LinearLayout
             android:id="@+id/tabOrderStatus"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginTop="24dp"
-            android:background="@color/hijaumuda"
+            android:background="@drawable/bg_tab_outline"
             android:orientation="horizontal"
             android:padding="4dp"
             app:layout_constraintTop_toBottomOf="@id/horizontalScroll"
@@ -119,7 +120,7 @@
                 android:gravity="center"
                 android:text="@string/OnProcess"
                 android:textColor="@color/whiteygz"
-                android:background="@color/hijau"
+                android:background="@drawable/bg_tab_selected"
                 android:textStyle="bold"
                 android:textSize="14sp" />
 
@@ -130,14 +131,11 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/Completed"
-                android:textColor="#808080"
+                android:textColor="@color/black"
                 android:background="@android:color/transparent"
                 android:textStyle="bold"
                 android:textSize="14sp" />
         </LinearLayout>
-
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
