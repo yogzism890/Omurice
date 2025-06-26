@@ -25,7 +25,6 @@
     <string name="atau">Atau</string>
     <string name="title_activity_main_tampilan_utama">MainActivityTampilanUtama</string>
     <string name="title_activity_tampilan_utama">TampilanUtama</string>
-    <string name="your_pocket_friendly_shop"><font color='#2FAA7A'>Your Pocket - </font> Friendly Grocery Shop</string>
     <string name="My_Cart">My Cart</string>
     <string name="Checkout">Checkout</string>
     <string name="Back">Back</string>
@@ -34,7 +33,7 @@
     <string name="bwgmrh" />
     <string name="remove" />
     <string name="add" />
-    <string name="harga">Rp.28.000,00</string>
+    <string name="harga">Rp.28.000</string>
     <string name="bobot">1Kg</string>
     <string name="produk">Tomat</string>
     <string name="tomat" />
@@ -53,18 +52,18 @@
     <string name="filter">Filter</string>
     <string name="Wortel">Wortel</string>
     <string name="bobotwrtel">500gr</string>
-    <string name="hargaa">Rp.8.000.00</string>
-    <string name="hargatomat">Rp.5.000.00</string>
+    <string name="hargaa">Rp.8.000</string>
+    <string name="hargatomat">Rp.5.000</string>
     <string name="bobottmt">250gr</string>
     <string name="kuantitaswrtl">1</string>
     <string name="kuantitastmt">2</string>
     <string name="bawang_putih">Bawang Putih</string>
-    <string name="hargabp">Rp.25.000.00</string>
+    <string name="hargabp">Rp.25.000</string>
     <string name="kentang">Kentang</string>
     <string name="kubis">Kubis</string>
-    <string name="hargakbs">Rp.10.000.00</string>
+    <string name="hargakbs">Rp.10.000</string>
     <string name="cabe">Cabai Merah</string>
-    <string name="hargacb">Rp.23.000.00</string>
+    <string name="hargacb">Rp.23.000</string>
     <string name="notifikasi">Notifikasi</string>
     <string name="best_product">Best Products</string>
     <string name="desc_home">desc_home</string>
@@ -122,6 +121,7 @@
     <string name="more">Titik 3</string>
     <string name="Completed">Completed</string>
     <string name="OnProcess">On Process</string>
+    <string name="your_pocket_friendly_shop">your pocket friendly shop</string>
 
 
 
