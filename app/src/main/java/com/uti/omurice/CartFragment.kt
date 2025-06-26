@@ -1,44 +1,47 @@
 package com.uti.omurice
 
 import android.os.Bundle
-import androidx.activity.addCallback
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import com.uti.omurice.databinding.FragmentCartBinding
 
 class CartFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    private var _binding: FragmentCartBinding? = null
+    private val binding get() = _binding!!
 
-        // Tangani tombol back (fisik) untuk kembali ke FavoritFragment
-        requireActivity().onBackPressedDispatcher.addCallback(this) {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentCartBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // ✅ Tombol Back ke FavoritFragment
+        binding.btnBack.setOnClickListener {
             parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, FavoritListFragment())
+                .replace(R.id.fragment_container, FavoritFragment())
+                .addToBackStack(null)
+                .commit()
+        }
+
+        // ✅ Tombol Checkout ke CheckoutFragment
+        binding.checkoutButton.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, CheckoutFragment())
                 .addToBackStack(null)
                 .commit()
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        val view = inflater.inflate(R.layout.fragment_cart, container, false)
-
-        // Temukan tombol checkout
-        val checkoutButton: Button = view.findViewById(R.id.checkoutButton)
-
-        // Ketika tombol checkout diklik, ganti fragment ke CheckoutFragment
-        checkoutButton.setOnClickListener {
-            parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, CheckoutFragment())
-                .addToBackStack(null) // agar bisa kembali ke Cart
-                .commit()
-        }
-
-        return view
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null // penting agar tidak memory leak
     }
 }
