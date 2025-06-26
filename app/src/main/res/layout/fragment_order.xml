@@ -352,6 +352,17 @@
                         android:textSize="12sp"
                         app:layout_constraintTop_toBottomOf="@id/tvOrderId3"
                         app:layout_constraintStart_toStartOf="parent" />
+                    <TextView
+                    android:id="@+id/tvAddress3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otheraddress"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@id/tvDeliverTo3"
+                    app:layout_constraintStart_toStartOf="parent" />
+                    
+
 
 
 
