@@ -24,7 +24,7 @@ class SearchFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         // Tombol kembali ke HomeFragment
-        binding.btnBack.setOnClickListener {
+        binding.btnBackRcvrPw.setOnClickListener {
             parentFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, HomeFragment())
                 .addToBackStack(null)

@@ -31,7 +31,7 @@ class FavoritFragment : Fragment() {
         }
 
         // Tombol back untuk kembali ke HomeFragment
-        binding.btnBack.setOnClickListener {
+        binding.btnBackRcvrPw.setOnClickListener {
             parentFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, HomeFragment())
                 .addToBackStack(null)
