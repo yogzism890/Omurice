@@ -48,6 +48,7 @@
             android:contentDescription="@string/edt"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
         <!-- Isi Profil -->
         <LinearLayout
             android:id="@+id/profileContent"
@@ -74,6 +75,7 @@
                     android:src="@drawable/foto"
                     android:background="@drawable/oval_whiteygz"
                     android:clipToOutline="true" />
+
                 <!-- Icon Kamera -->
                 <ImageView
                     android:layout_width="32dp"
@@ -85,9 +87,55 @@
                     android:src="@drawable/ic_camera"
                     android:contentDescription="@string/edt" />
             </FrameLayout>
+
+            <!-- Nama -->
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nama1"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Statistik -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <!-- Total Order -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_stat_card"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/totalorder1"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/TotalOrder"
+                        android:textColor="#888888"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
         </LinearLayout>
-
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -139,6 +139,8 @@
     <string name="myprofile">My Profile</string>
     <string name="edt">edit</string>
     <string name="nama1">Johan Abraham</string>
+    <string name="totalorder1">1.25k</string>
+    <string name="TotalOrder">Total Order</string>
 
 
 </resources>
