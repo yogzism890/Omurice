@@ -48,6 +48,35 @@
             android:contentDescription="@string/edt"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+        <!-- Isi Profil -->
+        <LinearLayout
+            android:id="@+id/profileContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/btnBackRcvrPw"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Foto Profil -->
+            <FrameLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/foto"
+                    android:background="@drawable/bg_button_circle"
+                    android:clipToOutline="true" />
+
+            </FrameLayout>
+        </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
