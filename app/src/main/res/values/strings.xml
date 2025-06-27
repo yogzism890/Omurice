@@ -141,6 +141,8 @@
     <string name="nama1">Johan Abraham</string>
     <string name="totalorder1">1.25k</string>
     <string name="TotalOrder">Total Order</string>
+    <string name="ordercancel2">55</string>
+    <string name="OrderCancel">Order Cancel</string>
 
 
 </resources>
