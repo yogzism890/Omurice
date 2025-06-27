@@ -72,7 +72,7 @@
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
                     android:src="@drawable/foto"
-                    android:background="@drawable/bg_button_circle"
+                    android:background="@drawable/oval_whiteygz"
                     android:clipToOutline="true" />
                 <!-- Icon Kamera -->
                 <ImageView
@@ -84,9 +84,9 @@
                     android:padding="6dp"
                     android:src="@drawable/ic_camera"
                     android:contentDescription="@string/edt" />
-
             </FrameLayout>
         </LinearLayout>
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
