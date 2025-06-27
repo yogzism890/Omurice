@@ -21,7 +21,7 @@ class ProfileeFragment : Fragment() {
         // Logika tombol back ke OrderFragment
         binding.btnBackRcvrPw.setOnClickListener {
             parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, OrderFragment())
+                .replace(R.id.fragment_container, HomeFragment())
                 .addToBackStack(null)
                 .commit()
         }
