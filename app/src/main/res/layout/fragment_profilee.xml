@@ -74,6 +74,16 @@
                     android:src="@drawable/foto"
                     android:background="@drawable/bg_button_circle"
                     android:clipToOutline="true" />
+                <!-- Icon Kamera -->
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/button_greenygz"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_camera"
+                    android:contentDescription="@string/edt" />
 
             </FrameLayout>
         </LinearLayout>
