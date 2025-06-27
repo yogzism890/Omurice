@@ -4,7 +4,8 @@
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="#F9F9F9">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -21,20 +22,23 @@
             android:contentDescription="@string/Back"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
         <!-- Judul -->
         <TextView
             android:id="@+id/txtPayment"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/myprofile"
             android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/btnEdit"
-            app:layout_constraintStart_toEndOf="@+id/btnBackRcvrPw"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@id/btnBackRcvrPw"
+            app:layout_constraintEnd_toStartOf="@id/btnEdit"
             app:layout_constraintTop_toTopOf="parent" />
-        <!-- Tombol More -->
+
+        <!-- Tombol Edit -->
         <ImageButton
             android:id="@+id/btnEdit"
             android:layout_width="40dp"
@@ -44,5 +48,7 @@
             android:contentDescription="@string/edt"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

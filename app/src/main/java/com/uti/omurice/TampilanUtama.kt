@@ -55,7 +55,7 @@ class TampilanUtama : AppCompatActivity() {
         }
         binding.btnProfile.setOnClickListener {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, ProfileFragment())
+                .replace(R.id.fragment_container, ProfileeFragment())
                 .addToBackStack(null)
                 .commit()
         }
