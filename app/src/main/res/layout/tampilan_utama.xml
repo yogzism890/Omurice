@@ -80,7 +80,7 @@
             app:srcCompat="@drawable/bill" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/btnProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
