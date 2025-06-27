@@ -143,6 +143,8 @@
     <string name="TotalOrder">Total Order</string>
     <string name="ordercancel2">55</string>
     <string name="OrderCancel">Order Cancel</string>
+    <string name="OrderPending">Order Pending</string>
+    <string name="OrderPending1">258</string>
 
 
 </resources>
