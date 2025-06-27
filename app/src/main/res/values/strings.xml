@@ -136,6 +136,8 @@
     <string name="otheraddress">Taman Melati No. 22, Jakarta</string>
     <string name="hargaorder3">Rp28.000</string>
     <string name="rice">Rice</string>
+    <string name="myprofile">My Profile</string>
+    <string name="edt">edit</string>
 
 
 </resources>

@@ -35,12 +35,12 @@
             android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/btnMore"
+            app:layout_constraintEnd_toStartOf="@+id/btnEdit"
             app:layout_constraintStart_toEndOf="@+id/btnBackRcvrPw"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
-            android:id="@+id/btnMore"
+            android:id="@+id/btnEdit"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/oval_whiteygz"
