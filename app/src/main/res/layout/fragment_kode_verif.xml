@@ -35,5 +35,22 @@
             app:layout_constraintHorizontal_bias="0.318"
             app:layout_constraintStart_toEndOf="@+id/imageButton"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:fontFamily="@font/manropelight"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/please_enter_your_email_address_to_recieve_a_verifaction_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
