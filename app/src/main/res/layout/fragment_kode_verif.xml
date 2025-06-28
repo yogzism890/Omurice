@@ -65,5 +65,45 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <LinearLayout
+            android:id="@+id/otpContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/textView22"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <EditText
+                android:id="@+id/otp1"
+                style="@style/OtpBoxStyle"
+                android:hint="-"
+                android:importantForAccessibility="yes"
+                android:autofillHints="username" />
+
+            <EditText
+                android:id="@+id/otp2"
+                style="@style/OtpBoxStyle"
+                android:hint="-"
+                android:importantForAccessibility="yes"
+                android:autofillHints="username" />
+
+            <EditText
+                android:id="@+id/otp3"
+                style="@style/OtpBoxStyle"
+                android:hint="-"
+                android:importantForAccessibility="yes"
+                android:autofillHints="username" />
+
+            <EditText
+                android:id="@+id/otp4"
+                style="@style/OtpBoxStyle"
+                android:hint="-"
+                android:importantForAccessibility="yes"
+                android:autofillHints="username" />
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
