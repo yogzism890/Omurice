@@ -1,6 +1,7 @@
 package com.uti.omurice
 
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.LayoutInflater
@@ -14,6 +15,8 @@ class KodeVerifFragment : Fragment() {
     private var _binding: FragmentKodeVerifBinding? = null
     private val binding get() = _binding!!
 
+    private lateinit var countDownTimer: CountDownTimer
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,10 +29,19 @@ class KodeVerifFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setupOtpInputs()
+        startResendTimer()
 
         // Tombol back
         binding.imageButton.setOnClickListener {
             requireActivity().onBackPressedDispatcher.onBackPressed()
+        }
+
+        // Aksi klik Resend
+        binding.tvResend.setOnClickListener {
+            if (binding.tvResend.isEnabled) {
+                // TODO: Kirim ulang kode OTP di sini
+                startResendTimer()
+            }
         }
     }
 
@@ -56,8 +68,25 @@ class KodeVerifFragment : Fragment() {
         }
     }
 
+    private fun startResendTimer() {
+        binding.tvResend.isEnabled = false
+        countDownTimer = object : CountDownTimer(60000, 1000) {
+            override fun onTick(millisUntilFinished: Long) {
+                val secondsLeft = millisUntilFinished / 1000
+                binding.tvResend.text = "Resend Code in ${secondsLeft}s"
+            }
+
+            override fun onFinish() {
+                binding.tvResend.text = "Resend Code"
+                binding.tvResend.isEnabled = true
+            }
+        }
+        countDownTimer.start()
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+        countDownTimer.cancel()
     }
 }
