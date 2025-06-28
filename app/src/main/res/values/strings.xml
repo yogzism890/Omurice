@@ -148,6 +148,7 @@
     <string name="kodeverif">kodeverif</string>
     <string name="verification_code">Verification Code</string>
     <string name="please_enter_your_email_address_to_recieve_a_verifaction_code">Please Enter Your <font color='#2FAA7A'>Email Address</font> To Recieve a Verifaction Code</string>
+    <string name="johan_gmail_com">johan@gmail.com</string>
 
 
 </resources>
