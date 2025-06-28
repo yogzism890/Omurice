@@ -145,6 +145,7 @@
     <string name="OrderCancel">Order Cancel</string>
     <string name="OrderPending">Order Pending</string>
     <string name="OrderPending1">258</string>
+    <string name="kodeverif">kodeverif</string>
 
 
 </resources>
